@@ -6,7 +6,7 @@ on:
       - 'payments/**'
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     env:
       STRIPE_KEY: ${{ secrets.STRIPE_KEY }}
