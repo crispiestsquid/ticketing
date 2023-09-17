@@ -5,7 +5,7 @@ export default ({ req }) => {
     // We are on the server
 
     return axios.create({
-      baseURL: 'http://prod-ticketing-app.xyz/',
+      baseURL: process.env.HOST || 'http://prod-ticketing-app.xyz/',
       headers: req.headers,
     })
   } else {
